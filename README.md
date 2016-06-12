@@ -3,7 +3,7 @@ Breakable forEach operator for Javascript
 
 
 
-Javascript is a great language but have you ever wished you could have a simple way to loop through any object type and break out of it whenever needed. It is possible to do it through native `for` and `for...in` loops but a lot of boilerplate code is required. What if a new function could solve all this problems with only a few line of code with the promise of being also compatible on legacy and new browsers? Here is the solution! Simply copy paste the content of the `forEach.js` file anywhere you might require it in your project and you can start using this new tool. This solution has been designed like a new operation to avoid conflicts with other builtin methods such as `Array.forEach` which is far from what this version offer.
+Javascript is a great language but have you ever wished you could have a simple way to loop through any object type and break out of it whenever needed. It is possible to do it through native `for` and `for...in` loops but a lot of boilerplate code is required. What if a new function could solve all this problems with only a few line of code with the promise of being also compatible on legacy and new browsers? Here is the solution! Simply copy paste the content of the `forEach.js` file anywhere you might require it in your project and you can start using this new tool. This solution has been designed like a new operator to avoid conflicts with other builtin methods such as `Array.forEach` which is far from what this version offer.
 
 ## Supportability
 
