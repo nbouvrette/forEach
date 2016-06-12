@@ -83,3 +83,20 @@ A 10 meters tree is still lower than the 500 meters limit.
 A 20 meters building is still lower than the 500 meters limit.
 A 300 meters skyscraper is still lower than the 500 meters limit.
 ```
+#### Example #6: Collect the returned value from a `forEach` loop.
+```javascript
+function whoIs(yearsOld) {
+    var name = forEach({Joe: 30, Jack: 43, John: 55}, function(age, name) {
+        if (age == yearsOld) {
+            return name;
+        }
+    });
+    return name + ' is ' + yearsOld + '.';
+}
+console.log(whoIs(30));
+
+```
+In this example, the iteration stopped right when it hit Joe and returned his name:
+```
+Joe is 30.
+```
