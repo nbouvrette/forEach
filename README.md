@@ -9,6 +9,8 @@ Javascript is a great language but have you ever wished you could have a simple 
 
 It supports `Arrays`, `Strings`, and any type of `Object`. It also has been tested on IE8+ but could possibly compatible with older browser as well (untested). No dependancy required, this is lightweight (less than 0.5kb minified) vanilla JS.
 
+Make sure to minify with the solution of your choice. This version is not provided to keep this repository simple to manage.
+
 ## Examples
 
 #### Example #1: Display each character of a string individually in the console.
