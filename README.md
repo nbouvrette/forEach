@@ -11,6 +11,8 @@ It supports `Arrays`, `Strings`, and any type of `Object`. It also has been test
 
 Make sure to minify with the solution of your choice. This version is not provided to keep this repository simple to manage.
 
+This solution does not actually support the `break` command. You will have to use `return` to actually break the loop instead.
+
 ## Examples
 
 #### Example #1: Display each character of a string individually in the console.
