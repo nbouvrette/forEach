@@ -13,6 +13,20 @@ Make sure to minify with the solution of your choice. This version is not provid
 
 This solution does not actually support the `break` command. You will have to use `return` to actually break the loop instead.
 
+## Performance
+
+Performance of this solution can be almost as fast a `for` loop as demonstrated here: https://jsfiddle.net/p4zq16rt/2/
+
+Results while iterator a huge array:
+
+```
+For loop:  11.590000000000146
+Custom forEach loop:  12.679999999999836
+For...of loop:  64.29999999999973
+For...in loop:  272.605
+Array.forEach loop:  217.5699999999997
+```
+
 ## Examples
 
 #### Example #1: Display each character of a string individually in the console.
