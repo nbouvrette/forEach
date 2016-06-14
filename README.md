@@ -1,9 +1,43 @@
 # forEach
 Breakable forEach operator for Javascript
 
-
-
 Javascript is a great language but have you ever wished you could have a simple way to loop through any object type and break out of it whenever needed. It is possible to do it through native `for` and `for...in` loops but a lot of boilerplate code is required. What if a new function could solve all this problems with only a few line of code with the promise of being also compatible on legacy and new browsers? Here is the solution! Simply copy paste the content of the `forEach.js` file anywhere you might require it in your project and you can start using this new tool. This solution has been designed like a new operator to avoid conflicts with other builtin methods such as `Array.forEach` which is far from what this version offer.
+
+## Why?
+
+The idea is to make code easier to read without having to wait for the latest browsers to support the new bells and whistles. Here are 3 way to solve the same example:
+
+###### Current multi-browser solution:
+This is supported by most (+8 year old) browsers today. Unfortuately this is very verbose and can hurt your eyes after long exposure. This is also probably why new version of JavaScript came with better options.
+
+```javascript
+var divNodeList = document.querySelectorAll('div');
+for (var key = 0; key < divNodeList.length; key++) {
+    var value = divNodeList[key];
+    console.log(key); // This is the key;
+    console.log(value); // This is the value;
+}
+```
+
+###### This script:
+This is what this script provide, clear way to write code - the drawback is a custom operator which is not native to JavaScript.
+
+```javascript
+forEach(document.querySelectorAll('div'), function(value, key) {
+    console.log(key); // This is the key;
+    console.log(value); // This is the value;
+});
+```
+
+###### `for...of - the future`:
+This is what the future holds (New 2015 JavaScript specification - ECMA6). As you can imagine, the support for both browsers and even IDE is limited and will take a long time to become mainstream. The other drawback is that given this is a new operator, it cannot be polyfilled, which means it will never be backward compatible. And also, it can support `break`, not just return and does not need a scope. This is what JavaScript's previous versions should have been shipped with!
+
+```javascript
+for (let [key, value] of document.querySelectorAll('div').entries()) {
+    console.log(key); // This is the key;
+    console.log(value); // This is the value;
+}
+```
 
 ## Supportability
 
@@ -118,3 +152,7 @@ In this example, the iteration stopped right when it hit Joe and returned his na
 ```
 Joe is 30.
 ```
+
+## What now?
+
+While you might say `There is no way I will use this custom operator`, there are several advantages by using it. Is it future proof? Most likely. Will it be redundant in a few years from now (or even sooner depending on the type of project)? For sure. In the meantime it is up to you to decide but the upside is that if you ever decide to use this, refactoring to `for...of` should be relatively easy in the future and in the meantime it will do your eyes a favor.
