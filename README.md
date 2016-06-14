@@ -7,7 +7,7 @@ Javascript is a great language but have you ever wished you could have a simple 
 
 The idea is to make code easier to read without having to wait for the latest browsers to support the new bells and whistles. Here are 3 way to solve the same example:
 
-###### Current multi-browser solution:
+###### Current legacy-proof solution:
 This is supported by most (+8 year old) browsers today. Unfortuately this is very verbose and can hurt your eyes after long exposure. This is also probably why new versions of JavaScript came with better options.
 
 ```javascript
