@@ -17,7 +17,7 @@ This solution does not actually support the `break` command. You will have to us
 
 Performance of this solution can be almost as fast a `for` loop as demonstrated here: https://jsfiddle.net/p4zq16rt/3/
 
-Results while iterating a huge array:
+Results while iterating a huge array (numbers provided from Chrome and may vary in other browsers):
 
 ```
 For loop:  11.590000000000146
