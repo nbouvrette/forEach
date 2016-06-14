@@ -15,7 +15,7 @@ This solution does not actually support the `break` command. You will have to us
 
 ## Performance
 
-Performance of this solution can be almost as fast a `for` loop as demonstrated here: https://jsfiddle.net/p4zq16rt/2/
+Performance of this solution can be almost as fast a `for` loop as demonstrated here: https://jsfiddle.net/p4zq16rt/3/
 
 Results while iterating a huge array:
 
