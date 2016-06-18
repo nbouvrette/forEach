@@ -59,7 +59,7 @@ Results while iterating a huge array (numbers provided from Chrome and may vary 
 
 ```
 For loop:  11.590000000000146
-Custom forEach loop:  12.679999999999836
+Custom forEach loop (this script):  12.679999999999836
 For...of loop:  64.29999999999973
 For...in loop:  272.605
 Array.forEach loop:  217.5699999999997
