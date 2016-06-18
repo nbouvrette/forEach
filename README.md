@@ -39,6 +39,9 @@ for (let [key, value] of document.querySelectorAll('div').entries()) {
 }
 ```
 
+###### Other options...
+Some popular libraries such as AngularJS and jQuery have implemented their own custom loops to solve the same problem. If you are already using these libraries, `forEach.js` will be redundant. If not, then you have more reasons to continue reading below.
+
 ## Supportability
 
 It supports `Arrays`, `Strings`, and any type of `Object`. It also has been tested on IE8+ but could possibly compatible with older browser as well (untested). No dependancy required, this is lightweight (less than 0.5kb minified) vanilla JS.
