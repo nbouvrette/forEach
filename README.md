@@ -38,6 +38,7 @@ for (let [key, value] of document.querySelectorAll('div').entries()) {
     console.log(value); // This is the value;
 }
 ```
+Note that while this works great on iterable objects, you will be in an even worse position for non-iterable objects. The browser support as of June 18th 2016 seems only by default on Firefox. Even in Chrome you will need to enable this special flag `chrome://flags/#enable-javascript-harmony` to be able to use the `Object.entries` method.
 
 ###### Other options...
 Some popular libraries such as AngularJS and jQuery have implemented their own custom loops to solve the same problem. If you are already using these libraries, `forEach.js` will be redundant. If not, then you have more reasons to continue reading below.
