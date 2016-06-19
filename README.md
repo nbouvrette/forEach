@@ -139,6 +139,8 @@ A 10 meters tree is still lower than the 500 meters limit.
 A 20 meters building is still lower than the 500 meters limit.
 A 300 meters skyscraper is still lower than the 500 meters limit.
 ```
+Note that `forEach` will also work when adding `.bind(this)` after the callback function. It's a good way to specify scope on browsers that supports `bind`. Passing the scope as an argument is mostly meant for legacy browsers such as IE8.
+
 #### Example #6: Collect the returned value from a `forEach` loop.
 ```javascript
 function whoIs(yearsOld) {
