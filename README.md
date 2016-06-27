@@ -161,4 +161,4 @@ Joe is 30.
 
 ## What now?
 
-While you might say `« there is no way I will use this custom operator »`, there are several advantages by using it. Is it future proof? Most likely. Will it be redundant in a few years from now (or even sooner depending on the type of project)? For sure. In the meantime it is up to you to decide but the upside is that if you ever decide to use this, refactoring to `for...of` should be relatively easy in the future and in the meantime it will do your eyes a favor.
+While you might say `« there is no way I will use this custom operator »`, there are several advantages by using it. Is it future proof? Most likely. Will it be redundant in a few years from now (or even sooner depending on the type of project)? For sure. In the meantime it is up to you to decide but the upside is that if you ever decide to use this, refactoring to `for...of` should be relatively easy in the future and it will do your eyes a favor.
